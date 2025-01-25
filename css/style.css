@@ -5,7 +5,13 @@
     --light: #FFFFFF;
     --dark: #152440;
 }
-
+.custom-icon {
+    width: 52%;
+    height: auto;
+    filter: invert(1);
+    display: block;
+    margin: 0 auto;
+}
 h1,
 h2,
 .font-weight-bold {
@@ -211,6 +217,23 @@ h6,
 
 .team-item:hover .team-text {
     left: 0;
+}
+.team-quote {
+    border-top: 2px solid var(--primary); /* Add a nice separation line */
+    font-style: italic; /* Italicize the text */
+    font-size: 0.9rem; /* Slightly smaller text size for the quote */
+    color: var(--dark); /* Neutral text color for readability */
+    padding-top: 30px !important;
+    background-color: #e9e9e9;
+}
+
+.team-item {
+    margin-bottom: 20px; /* Add some spacing between team items */
+}
+
+.team-quote i {
+    font-size: 1rem; /* Adjust font size for quote marks */
+    line-height: 1.5; /* Ensure proper line height for better readability */
 }
 
 .testimonial-carousel .owl-nav {

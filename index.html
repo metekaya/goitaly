@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CONSULT - Consultancy Website Template</title>
+    <title>GoItaly - Consultancy Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -35,21 +35,19 @@
     <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <!-- TODO: hrefler degistirilecek, gizlilik, politika ve s.s.s sayfası eklenecek -->
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Gizlilik Politikası</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Kullanım Koşulları</small></a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:info@goitaly.com.tr" class="text-white">info@goitaly.com.tr</a></p>
                     </div>
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i><a href="tel:+393533797001" class="text-white">+(39) 353 379 7001</a></p>
                     </div>
                 </div>
             </div>
@@ -60,19 +58,21 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>consult</h1>
+        <a href="index.html" class="navbar-brand p-0 d-flex gap-3 align-items-center">
+            <img src="assets/logo.png" alt="Logo" style="height: 80px; padding-top: 10px; padding-bottom: 10px;">
+            <h1 class="m-0 text-primary">GoItaly</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                <a href="index.html" class="nav-item nav-link active">Anasayfa</a>
+                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                <a href="service.html" class="nav-item nav-link">Hizmetlerimiz</a>
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
                     <div class="dropdown-menu m-0">
                         <a href="blog.html" class="dropdown-item">Blog Grid</a>
                         <a href="detail.html" class="dropdown-item">Blog Detail</a>
@@ -81,8 +81,8 @@
                         <a href="team.html" class="dropdown-item">The Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
             </div>
         </div>
     </nav>
@@ -94,24 +94,22 @@
         <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <img class="w-100" src="assets/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">Business Consultancy</h5>
-                            <h1 class="display-1 text-white mb-md-4">We Provide Solution On Your Business</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                            <h5 class="text-white">Yurt Dışı Eğitim Danışmanlığı</h5>
+                            <h1 class="display-1 text-white mb-md-4">İtalya'da Eğitim Yolculuğunuz Burada Başlıyor</h1>
+                            <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Bize Ulaşın</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <img class="w-100" src="assets/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-white text-uppercase">Business Consultancy</h5>
-                            <h1 class="display-1 text-white mb-md-4">Take Our Help To Reach The Top Level</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
-                            <a href="" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                            <h5 class="text-white">Yurt Dışı Eğitim Danışmanlığı</h5>
+                            <h1 class="display-1 text-white mb-md-4">İtalya'da Yeni Bir Hayata Adım Atın</h1>
+                            <a href="contact.html" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Bize Ulaşın</a>
                         </div>
                     </div>
                 </div>
@@ -119,12 +117,12 @@
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Önceki</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Sonraki</span>
             </button>
         </div>
     </div>
@@ -135,38 +133,39 @@
     <div class="container-fluid bg-secondary p-0">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Welcome To <span class="text-primary">CONSULT</span></h1>
-                <h4 class="text-primary mb-4">Diam dolor diam ipsum sit. Clita erat ipsum et lorem stet no lorem sit clita duo justo magna dolore</h4>
-                <p class="mb-4">Et stet ipsum nonumy rebum eos justo, accusam invidunt aliquyam stet magna at et sanctus, vero sea sit amet dolores, sit dolor duo invidunt dolor, kasd rebum consetetur diam invidunt erat stet. Accusam nonumy lorem kasd eirmod. Justo clita sadipscing ea invidunt rebum sadipscing consetetur. Amet diam amet amet sanctus sanctus invidunt erat ipsum eirmod.</p>
-                <a href="" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Quote</a>
+                <h1 class="display-5 mb-4">Caio, <span class="text-primary">GoItaly</span> ile İtalya’ya git  </h1>
+                <h4 class="text-primary mb-4">İtalya'da eğitim hayalinizi gerçeğe dönüştürmek için buradayız. Karmaşık ve yorucu başvuru süreçlerini sizin için kolaylaştırıyor, her adımda yanınızda oluyoruz.</h4>
+                <p class="mb-4">GoItaly ile burs imkanlarından vize başvurularına, üniversite kayıtlarından dil eğitimi hazırlıklarına kadar ihtiyacınız olan her konuda tam destek sunuyoruz. Başarıya ulaşmak için ihtiyacınız olan rehberlik ve desteği bizimle bulun. Bu yolculukta güvenle ilerlemeniz için her zaman yanınızdayız.</p>
+                <!-- <a href="" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Quote</a> -->
             </div>
             <div class="col-lg-6">
                 <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
                     <div class="d-flex text-white mb-5">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4"></i>
+                            <i class="fa fa-school fs-4"></i> 
+                            <!-- TODO: buradaki iconlar değiştirilecek -->
                         </div>
                         <div class="ps-4">
-                            <h3>Business Planning</h3>
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
+                            <h3>Okul Kabulü</h3>
+                            <p class="mb-0">GoItaly, öğrencilerin eğitim yolculuklarını rahatlıkla başlatmalarını sağlar, böylece en iyi okullarda yerlerini garanti altına alabilirler.</p>
                         </div>
                     </div>
                     <div class="d-flex text-white mb-5">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-chart-line fs-4"></i>
+                            <i class="fa fa-passport fs-4"></i>
                         </div>
                         <div class="ps-4">
-                            <h3>Financial Analaysis</h3>
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
+                            <h3>Vize Kabulü</h3>
+                            <p class="mb-0">GoItaly, öğrencilerin vize sürecinde bireysel bir plan çıkararak rehberlik ederek, tüm aşamaları sorunsuz bir şekilde vize almasına yardımcı olur.</p>
                         </div>
                     </div>
                     <div class="d-flex text-white">
                         <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
-                            <i class="fa fa-balance-scale fs-4"></i>
+                            <i class="fa fa-graduation-cap fs-4"></i>
                         </div>
                         <div class="ps-4">
-                            <h3>legal Advisory</h3>
-                            <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem sit clita duo</p>
+                            <h3>Burs Kabulü</h3>
+                            <p class="mb-0">GoItaly, burs imkanları sayesinde öğrencilerin eğitim yolculuklarına finansal destek sağlamalarını sağlar ve başvurularını öğrenci adına en verimli şekilde yönetir.</p>
                         </div>
                     </div>
                 </div>
@@ -177,64 +176,65 @@
     
 
     <!-- Services Start -->
+           <!-- TODO: ikonlar degistirilecek -->
     <div class="container-fluid pt-6 px-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">What We Offer</h1>
+            <h1 class="display-5 mb-0">Biz ne sunuyoruz</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-user-tie fa-2x"></i>
+                        <i class="fa fa-lightbulb fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Business Research</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">Kapsamlı Bilgi Birikimi</h3>
+                    <p class="mb-0">GoItaly, İtalya’da eğitim sürecine dair derin bir bilgi birikimine ve tecrübeye sahiptir. Öğrencilerin her aşamada karşılaşabileceği zorlukları önceden öngörerek, doğru adımlar atmalarını sağlıyoruz</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-pie fa-2x"></i>
+                        <i class="fa fa-user-check fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Stretagic Planning</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">Kişiye Özel Danışmanlık</h3>
+                    <p class="mb-0">Her öğrencinin ihtiyaçları farklıdır, bu yüzden başvuru süreçlerini kişiselleştiriyoruz. Her adımda öğrencilerle bire bir ilgilenerek, onların tercih ve hedeflerine en uygun çözümleri uyguluyoruz.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-line fa-2x"></i>
+                        <i class="fa fa-users-cog fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Market Analysis</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">Deneyim Sahibi Ekip</h3>
+                    <p class="mb-0">GoItaly, eğitim danışmanlık sektöründe kısa bir süre önce kurulmuş olmasına rağmen, ekibimizin sahip olduğu deneyimler ve güncel bilgiler, rehberliğimizi çok daha değerli hale getiriyor. Bizzat aynı süreçleri yaşamış kişiler olarak, öğrencilerin nelere ihtiyaç duyduklarını biliyoruz.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-chart-area fa-2x"></i>
+                        <i class="fa fa-passport fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Financial Analaysis</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">Vize Süreci Uzmanlığı</h3>
+                    <p class="mb-0">Elimizdeki geniş vize veri tabanı sayesinde, vize başvuru sürecinde gerekli olan her belge ve bilgilendirmeyi eksiksiz sağlıyoruz. Öğrencilerin vize sürecini sorunsuz tamamlamaları için titizlikle çalışıyoruz.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-balance-scale fa-2x"></i>
+                        <i class="fa fa-tasks fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">legal Advisory</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">Tam Süreç Takibi</h3>
+                    <p class="mb-0">Danışanlarımızla sürekli iletişim halinde kalıyor, sürecin her adımında düzenli bilgilendirmeler yapıyoruz. Bu, öğrencilerin stres yaşamadan süreçleri takip edebilmesini ve tüm gelişmelerden haberdar olmasını sağlıyor.</p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="service-item bg-secondary text-center px-5">
                     <div class="d-flex align-items-center justify-content-center bg-primary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
-                        <i class="fa fa-house-damage fa-2x"></i>
+                        <i class="fa fa-map-marked-alt fa-2x"></i>
                     </div>
-                    <h3 class="mb-3">Tax & Insurance</h3>
-                    <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor ipsum amet eos erat ipsum lorem et sit sed stet lorem</p>
+                    <h3 class="mb-3">İtalya'ya Varışta Oryantasyon</h3>
+                    <p class="mb-0">Sadece başvuru süreciyle sınırlı kalmıyoruz; İtalya’ya varış sonrası da danışanlarımıza destek veriyoruz. Yeni bir ülkede karşılaşacakları ilk zorluklar konusunda rehberlik sunarak, adaptasyon süreçlerini hızlandırıyoruz.</p>
                 </div>
             </div>
         </div>
@@ -245,41 +245,43 @@
     <!-- Features Start -->
     <div class="container-fluid py-6 px-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Why Choose Us!!!</h1>
+            <h1 class="display-5 mb-0">Neden GoItaly</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5">
             <div class="col-lg-4">
                 <div class="row g-5">
+                    <!-- TODO: resimler değiştirilecek -->
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-cubes fs-4 text-white"></i>
+                            <i class="fa fa-bullseye fs-4 text-white"></i>
                         </div>
-                        <h3>Best In Industry</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Misyonumuz</h3>
+                        <p class="mb-0">GoItaly ekibi olarak, İtalya’da eğitim almak isteyen öğrencilere en iyi rehberlik ve danışmanlık hizmetini sunmak. Amacımız, öğrencilerin başvuru sürecinden itibaren her adımda yanlarında olmak ve bu karmaşık süreçleri en sorunsuz ve sağlıklı şekilde yönetmektir.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-percent fs-4 text-white"></i>
+                            <i class="fa fa-users fs-4 text-white"></i>
                         </div>
-                        <h3>99% Success Rate</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Tecrübeli Ekip</h3>
+                        <p class="mb-0">GoItaly ekibi, aynı zorlukları aşmış bizzat aşmış çalışanlardan oluşmakta ve Danışanlarımızın bu karmaşık süreçteki tüm adımlarını dikkatle takip ediyor, sürekli güncellenen yönetmeliklere uygun şekilde rehberlik ediyoruz. Ekibimizin sahip olduğu bilgi ve tecrübe, sürecin her aşamasında danışanlarımızın yanında olmamızı ve onlara en doğru rehberliği sunmamızı sağlıyor.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award fs-4 text-white"></i>
+                            <i class="fa fa-user-graduate fs-4 text-white"></i>
                         </div>
-                        <h3>Award Winning</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Öğrenci Odaklı Hizmet </h3>
+                        <p class="mb-0">GoItaly olarak, danışanlarımızın memnuniyetini ve ihtiyaçlarını her zaman ön planda tutuyoruz. Size en uygun ve esnek çözümler sunarak sürecinizi kolaylaştırıyor, hedeflerinize ulaşmanıza destek oluyoruz çünkü sizin başarmanızı istiyoruz.</p>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4">
                 <div class="d-block bg-primary h-100 text-center">
                     <img class="img-fluid" src="img/feature.jpg" alt="">
+                    <!-- TODO: resim değiştirilecek -->
                     <div class="p-4">
-                        <p class="text-white mb-4">Clita nonumy sanctus nonumy et clita tempor, et sea amet ut et sadipscing rebum amet takimata amet, sed accusam eos eos dolores dolore et. Et ea ea dolor rebum invidunt clita eos. Sea accusam stet stet ipsum, sit ipsum et ipsum kasd</p>
-                        <a href="" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Learn More</a>
+                        <p class="text-white mb-4">Bu süreçten geçmiş biri olarak, ben de bir danışmanlık firması ile yola çıkmıştım ancak yaşadığım zorlu eğitim yolculuğunda danışmanın büyük eksiklikleri ve bilgisizliği nedeniyle çok zor zamanlar geçirdim. Ancak sizlerin endişelenmesine gerek yok; bu süreçte hem ben hem de benzer deneyimlerden geçmiş olan ekibim sizin yanınızda olacağız. Amacımız, bu süreci en rahat ve başarılı şekilde tamamlamanızı sağlamaktır. GoItaly’yi kurmamın temel amacı, sizlerin aynı zorlukları yaşamadan başarıya ulaşmanızı sağlamaktır.</p>
+                        <a href="about.html" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Daha Fazlasını Keşfet</a>
                     </div>
                 </div>
             </div>
@@ -287,24 +289,24 @@
                 <div class="row g-5">
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="far fa-smile-beam fs-4 text-white"></i>
+                            <i class="far fa-lightbulb fs-4 text-white"></i>
                         </div>
-                        <h3>100% Happy Client</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Vizyonumuz</h3>
+                        <p class="mb-0">GoItaly ekibi olarak, öğrencilerin hayallerine ulaşmalarını sağlayarak, bu süreçte karşılaştıkları her türlü zorluğu aşmalarına destek olmaktır çünkü öğrencilerimizin başarısı, hayalleri olan diğer öğrencileri cesaretlendirecek ve daha fazla başarı hikayesine hep birlikte imza atacağız. Herkes refah bir hayat sürmek ve başarmak ister ancak sadece cesaret edenler başarır.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-user-tie fs-4 text-white"></i>
+                            <i class="fa fa-cogs fs-4 text-white"></i>
                         </div>
-                        <h3>Professional Advisors</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Özelleştirilebilir hizmetler</h3>
+                        <p class="mb-0">GoItaly, En kapsamlı şekilde ilk başvuru sürecinden İtalya'da yerleşip yeni bir hayat kurana kadar tüm adımlarda yanınızdayız. Diğer danışmanlıklardan farklı olarak sadece ihtiyacınız olan hizmetleri tek bir paket altında toplayabilirsiniz.</p>
                     </div>
                     <div class="col-12">
                         <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-headset fs-4 text-white"></i>
+                            <i class="fa fa-network-wired fs-4 text-white"></i>
                         </div>
-                        <h3>24/7 Customer Support</h3>
-                        <p class="mb-0">Magna sea eos sit dolor, ipsum amet ipsum lorem diam dolor eos diam et diam dolor ea</p>
+                        <h3>Güçlü İletişim Ağı </h3>
+                        <p class="mb-0">İtalya'daki üniversiteler, İş Ortaklarımız ve yerel kurumlarla güçlü bağlantılarımız sayesinde başvuru ve kayıt süreçlerini hızlı ve sorunsuz yürütüyoruz. Süreç boyunca size özel çözümler uyguluyoruz.</p>
                     </div>
                 </div>
             </div>
@@ -314,88 +316,53 @@
 
 
     <!-- Quote Start -->
+          <!-- TODO: Resim değişecek form submission eklenecek -->
+
     <div class="container-fluid bg-secondary px-0">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">Request A Free Quote</h1>
-                <p class="mb-4">Kasd vero erat ea amet justo no stet, et elitr no dolore no elitr sea kasd et dolor diam tempor. Nonumy sed dolore no eirmod sit nonumy vero lorem amet stet diam at. Ea at lorem sed et, lorem et rebum ut eirmod gubergren, dolor ea duo diam justo dolor diam ipsum dolore stet stet elitr ut. Ipsum amet labore lorem lorem diam magna sea, eos sed dolore elitr.</p>
+                <h1 class="display-5 mb-4">Bilgi almak için hemen ulaşın</h1>
+                <p class="mb-4">GoItaly ile hayalinizdeki eğitimi planlamak artık çok kolay! Kişiye özel okul, vize ve burs haritalarımızla, İtalya'da eğitim yolculuğunuzun her adımını sizin için planlıyoruz. Ücretsiz danışmanlık fırsatından yararlanarak size en uygun çözümleri sunabiliriz. Hemen iletişime geçin, hayallerinize birlikte ulaşalım!</p>
                 <form>
-                    <div class="row gx-3">
+                    <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">Full Name</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">Email address</label>
+                                <label for="form-floating-1">İsim Soyisim</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <select class="form-select" id="floatingSelect" aria-label="Financial Consultancy">
-                                    <option selected>Financial Consultancy</option>
-                                    <option value="1">Strategy Consultancy</option>
-                                    <option value="2">Tax Consultancy</option>
-                                </select>
-                                <label for="floatingSelect">Select A Service</label>
+                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
+                                <label for="form-floating-2">E-posta Adresi</label>
                             </div>
                         </div>
-                        <div class="col-6">
-                            <button class="btn btn-primary w-100 h-100" type="submit">Request A Quote</button>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="form-floating-3" placeholder="Subject">
+                                <label for="form-floating-3">Konu</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
+                                <label for="form-floating-4">Mesajın</label>
+                              </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Gönder</button>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
-                    <img class="position-absolute w-100 h-100" src="img/quote.jpg" style="object-fit: cover;">
+                    <img class="position-absolute w-100 h-100" src="img/call-center.jpg" style="object-fit: cover;">
                 </div>
             </div>
         </div>
     </div>
     <!-- Quote End -->
-
-
-    <!-- Team Start -->
-    <div class="container-fluid py-6 px-5">
-        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Our Team Members</h1>
-            <hr class="w-25 mx-auto bg-primary">
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Full Name</h3>
-                        <p class="text-white text-uppercase mb-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Full Name</h3>
-                        <p class="text-white text-uppercase mb-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="team-item position-relative overflow-hidden">
-                    <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
-                        <h3 class="text-white">Full Name</h3>
-                        <p class="text-white text-uppercase mb-0">Designation</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
 
 
     <!-- Testimonial Start -->
@@ -407,25 +374,26 @@
                 </div>
             </div>
             <div class="col-lg-6 py-6 px-5">
-                <h1 class="display-5 mb-4">What Say Our Client!!!</h1>
+                <h1 class="display-5 mb-4">Danışanlarımız Ne Diyor?</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Daha önce başka bir danışmanlık firmasıyla çalışmıştım, ancak süreç boyunca birçok sorunla karşılaştım ve hiçbir konuda net bir yönlendirme alamadım. GoItaly ile tanıştıktan sonra her şey değişti. Kişisel ihtiyaçlarıma özel bir vize ve burs stratejisi oluşturuldu ve tüm süreçler profesyonel bir şekilde yönetildi. Artık İtalya'da hayal ettiğim eğitimi alıyorum ve GoItaly'nin desteği sayesinde bu yolculuk benim için stressiz ve başarılı bir şekilde tamamlandı!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" alt="">
+                            <!-- TODO: resim değiştirilecek -->
+                            <img class="img-fluid rounded-circle" src="assets/efe.jpeg" alt="">
                             <div class="ps-4">
-                                <h3>Client Name</h3>
-                                <span class="text-uppercase">Profession</span>
+                                <h3>Recep Efe Kaya</h3>
+                                <span class="text-uppercase">Kimya Bölümü Öğrencisi</span>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item">
-                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>Dolores sed duo clita tempor justo dolor et stet lorem kasd labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam tempor erat dolor rebum sit ipsum.</p>
+                        <p class="fs-4 fw-normal mb-4"><i class="fa fa-quote-left text-primary me-3"></i>İtalya’da eğitim hayalim için başvurduğum ilk danışmanlık firması beni büyük bir hayal kırıklığına uğrattı. Eksik yönlendirmeler ve sürekli geciken işlemler nedeniyle neredeyse bu hayalimden vazgeçiyordum. Ancak GoItaly ile tanıştığım anda her şey değişti. Vize ve burs süreçlerim için bana özel bir strateji hazırlandı ve her adımda profesyonel destek sağlandı. Şu an İtalya’da eğitimime başlamış olmanın mutluluğunu yaşıyorum. GoItaly olmasaydı bu süreç benim için imkansız olurdu!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" alt="">
+                            <img class="img-fluid rounded-circle" src="assets/yasin.jpg" alt="">
                             <div class="ps-4">
-                                <h3>Client Name</h3>
-                                <span class="text-uppercase">Profession</span>
+                                <h3>Yasin Yılmaz</h3>
+                                <span class="text-uppercase">Elektrik Mühendisliği Öğrencisi</span>
                             </div>
                         </div>
                     </div>
@@ -437,9 +405,10 @@
 
 
     <!-- Blog Start -->
+     <!-- TODO: Blog post sayfalari eklenop hrefler degistirilecek -->
     <div class="container-fluid py-6 px-5">
         <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-            <h1 class="display-5 mb-0">Latest Blog Post</h1>
+            <h1 class="display-5 mb-0">Blog</h1>
             <hr class="w-25 mx-auto bg-primary">
         </div>
         <div class="row g-5">
@@ -450,16 +419,16 @@
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
-                            <span>01</span>
-                            <h5 class="text-uppercase m-0">Jan</h5>
-                            <span>2045</span>
+                            <span>17</span>
+                            <h5 class="text-uppercase m-0">Ocak</h5>
+                            <span>2025</span>
                         </div>
                         <div class="d-flex flex-column justify-content-center py-3 px-4">
                             <div class="d-flex mb-2">
                                 <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
-                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Danışmanlık</small>
                             </div>
-                            <a class="h4" href="">Magna sea dolor ipsum amet lorem eos</a>
+                            <a class="h4" href="detail.html">Yurt Dışında Eğitim Almanın Avantajları ve Dezavantajları</a>
                         </div>
                     </div>
                 </div>
@@ -471,16 +440,16 @@
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
-                            <span>01</span>
-                            <h5 class="text-uppercase m-0">Jan</h5>
-                            <span>2045</span>
+                            <span>20</span>
+                            <h5 class="text-uppercase m-0">Ocak</h5>
+                            <span>2025</span>
                         </div>
                         <div class="d-flex flex-column justify-content-center py-3 px-4">
                             <div class="d-flex mb-2">
                                 <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
-                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Eğitim</small>
                             </div>
-                            <a class="h4" href="">Magna sea dolor ipsum amet lorem eos</a>
+                            <a class="h4" href="detail-2.html">İtalya’nın Eğitim Altyapısı ve Fırsatları</a>
                         </div>
                     </div>
                 </div>
@@ -492,16 +461,16 @@
                     </div>
                     <div class="bg-secondary d-flex">
                         <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
-                            <span>01</span>
-                            <h5 class="text-uppercase m-0">Jan</h5>
-                            <span>2045</span>
+                            <span>24</span>
+                            <h5 class="text-uppercase m-0">Ocak</h5>
+                            <span>2025</span>
                         </div>
                         <div class="d-flex flex-column justify-content-center py-3 px-4">
                             <div class="d-flex mb-2">
                                 <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
-                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Gezi</small>
                             </div>
-                            <a class="h4" href="">Magna sea dolor ipsum amet lorem eos</a>
+                            <a class="h4" href="detail-3.html">İtalya'da Gezilecek Yerler ve Kültürel Etkinlikler</a>
                         </div>
                     </div>
                 </div>
@@ -511,67 +480,69 @@
     <!-- Blog End -->
     
 
+
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-secondary p-5">
         <div class="row g-5">
             <div class="col-12 text-center">
-                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <h1 class="display-6 mb-4">GoItaly ile İtalya yolculuğunuz başlasın!</h1>
                 <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
-                    </div>
                 </form>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary p-5">
         <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Quick Links</h3>
+            <!-- <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Hızlı Linkler</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Anasayfa</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
+                </div>
+            </div> -->
+            <div class="col-lg-2">
+                </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Hızlı Linkler</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-secondary mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-secondary mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Popular Links</h3>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                </div>
+                <h3 class="text-white mb-4">Bize Ulaşın</h3>
+                <!-- <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, Italya</p> -->
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i><a href="mailto:info@goitaly.com.tr" class="text-secondary">info@goitaly.com.tr</a></p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+393533797001" class="text-secondary">+(39) 353 379 7001</a></p>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Follow Us</h3>
+                <h3 class="text-white mb-4">Bizi Takip Edin</h3>
                 <div class="d-flex">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/people/GoItaly/61567112667924/"><img src="assets/facebook.png" alt="Facebook" class="custom-icon"></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/goitaly41/"><img src="assets/instagram.png" alt="Instagram" class="custom-icon"></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.tiktok.com/@goitaly41"><img src="assets/tik-tok.png" alt="TikTok" class="custom-icon"></a>
                 </div>
+            </div>
+            <div class="col-lg-1">
             </div>
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        <p class="m-0">&copy; 2025 <a class="text-secondary border-bottom" href="index.html">GoItaly</a>. Tüm Hakları Saklıdır. GoItaly Danışmanlık Hizmetleri'nin Ticari Markasıdır.</p>
     </div>
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#header-carousel" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->

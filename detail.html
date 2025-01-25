@@ -3,18 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>CONSULT - Consultancy Website Template</title>
+    <title>GoItaly - Consultancy Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="assets/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -35,21 +35,19 @@
     <div class="container-fluid bg-secondary ps-5 pe-0 d-none d-lg-block">
         <div class="row gx-0">
             <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
+                <!-- TODO: hrefler degistirilecek, gizlilik, politika ve s.s.s sayfası eklenecek -->
                 <div class="d-inline-flex align-items-center">
-                    <a class="text-body py-2 pe-3 border-end" href=""><small>FAQs</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Support</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Privacy</small></a>
-                    <a class="text-body py-2 px-3 border-end" href=""><small>Policy</small></a>
-                    <a class="text-body py-2 ps-3" href=""><small>Career</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Gizlilik Politikası</small></a>
+                    <a class="text-body py-2 px-3 border-end" href=""><small>Kullanım Koşulları</small></a>
                 </div>
             </div>
             <div class="col-md-6 text-center text-lg-end">
                 <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
                     <div class="me-3 pe-3 border-end py-2">
-                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>info@example.com</p>
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i><a href="mailto:info@goitaly.com.tr" class="text-white">info@goitaly.com.tr</a></p>
                     </div>
                     <div class="py-2">
-                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</p>
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i><a href="tel:+393533797001" class="text-white">+(39) 353 379 7001</a></p>
                     </div>
                 </div>
             </div>
@@ -60,43 +58,48 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
-        <a href="index.html" class="navbar-brand p-0">
-            <h1 class="m-0 text-uppercase text-primary"><i class="far fa-smile text-primary me-2"></i>consult</h1>
+        <a href="index.html" class="navbar-brand p-0 d-flex gap-3 align-items-center">
+            <img src="assets/logo.png" alt="Logo" style="height: 80px; padding-top: 10px; padding-bottom: 10px;">
+            <h1 class="m-0 text-primary">GoItaly</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 me-n3">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Service</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                <a href="index.html" class="nav-item nav-link">Anasayfa</a>
+                <a href="about.html" class="nav-item nav-link">Hakkımızda</a>
+                <a href="service.html" class="nav-item nav-link">Hizmetlerimiz</a>
+                <a href="blog.html" class="nav-item nav-link active">Blog</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
                     <div class="dropdown-menu m-0">
                         <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                        <a href="detail.html" class="dropdown-item active">Blog Detail</a>
+                        <a href="detail.html" class="dropdown-item">Blog Detail</a>
                         <a href="feature.html" class="dropdown-item">Features</a>
                         <a href="quote.html" class="dropdown-item">Quote Form</a>
                         <a href="team.html" class="dropdown-item">The Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
                     </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div> -->
+                <a href="contact.html" class="nav-item nav-link">İletişim</a>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
 
 
+
     <!-- Page Header Start -->
     <div class="container-fluid bg-dark p-5">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="display-4 text-white">Blog Detail</h1>
-                <a href="">Home</a>
+                <h1 class="display-4 text-white">Blog Yazısı</h1>
+                <a href="index.html">Anasayfa</a>
                 <i class="far fa-square text-primary px-2"></i>
-                <a href="">Blog Detail</a>
+                <a href="blog.html">Blog</a>                
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="">Blog Yazısı</a>
             </div>
         </div>
     </div>
@@ -107,34 +110,40 @@
     <div class="container-fluid py-6 px-5">
         <div class="row g-5">
             <div class="col-lg-8">
-                <!-- Blog Detail Start -->
+               <!-- Blog Detail Start -->
                 <div class="mb-5">
-                    <img class="img-fluid w-100 mb-5" src="img/blog-1.jpg" alt="">
-                    <h1 class="mb-4">Diam dolor est labore duo ipsum clita sed et lorem tempor duo</h1>
-                    <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
-                        magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
-                        amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
-                        sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
-                        aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
-                        sit stet no diam kasd vero.</p>
-                    <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
-                        vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
-                        nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
-                        ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
-                        clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
-                        justo dolore sit invidunt.</p>
-                    <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
-                        invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
-                        lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
-                        rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
-                        sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
-                        lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
-                        sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos.</p>
+                    <img class="img-fluid w-100 mb-5" src="img/blog-1.jpg" alt="Yurt Dışında Eğitim">
+                    <h1 class="mb-4">Yurt Dışında Eğitim Almanın Avantajları ve Dezavantajları</h1>
+                    <p>Yurt dışında eğitim almak, hem kişisel hem de akademik gelişim açısından öğrencilere eşsiz fırsatlar sunan bir deneyimdir. Ancak, bu önemli kararın hem avantajlarını hem de dezavantajlarını göz önünde bulundurmak gerekir. Yurt dışında eğitim almak isteyenler için bu yazıda tüm artıları ve eksileri detaylı bir şekilde ele alacağız. Ayrıca, İtalya gibi popüler eğitim destinasyonları hakkında bilgiler ve bu süreci kolaylaştıracak danışmanlık hizmetlerinden de bahsedeceğiz.</p>
+                    
+                    <h2 class="mb-3">Yurt Dışında Eğitim Almanın Avantajları</h2>
+                    <p><strong>Kültürel Zenginlik:</strong> Farklı bir ülkede eğitim almak, farklı kültürleri tanıma ve anlama fırsatı sunar. Yeni bir dil öğrenmek, farklı yaşam tarzlarını deneyimlemek ve global bir bakış açısı kazanmak, yurt dışı eğitimin en büyük avantajları arasında yer alır.</p>
+                    <p><strong>Akademik Fırsatlar:</strong> Yurt dışındaki üniversiteler genellikle dünya sıralamalarında yüksek sıralarda yer alır. Özellikle İtalya\u2019da yer alan üniversiteler, uygun eğitim ücretleri ve burs imkânlarıyla dikkat çeker.</p>
+                    <p><strong>Global İş Fırsatları:</strong> Yurt dışında eğitim almanın önemli avantajlarından biri de mezun olduktan sonra global iş piyasasında daha fazla tercih edilme şansıdır.</p>
+                    
+                    <h2 class="mb-3">Yurt Dışında Eğitim Almanın Dezavantajları</h2>
+                    <p><strong>Yüksek Maliyetler:</strong> Yurt dışında eğitim almak, genellikle yurt içindeki eğitimden daha maliyetlidir. Uçak biletleri, yaşam masrafları ve eğitim ücretleri, bütçe açısından büyük bir yük oluşturabilir.</p>
+                    <p><strong>Uyum Süreci:</strong> Farklı bir ülkede yaşamak, ilk başlarda zorlayıcı olabilir. Kültürel farklar, dil bariyerleri ve yeni bir çevreye alışma süreci, bazı öğrenciler için stresli olabilir.</p>
+                    
+                    <h2 class="mb-3">İtalya’da Eğitim Almanın Avantajları</h2>
+                    <p>İtalya, Avrupa’nın en köklü eğitim sistemlerinden birine sahiptir. Bologna Üniversitesi gibi dünya çapında tanınan üniversitelerde eğitim alma fırsatı sunar. Ayrıca, yabancı öğrencilere geniş burs olanakları sunarak eğitim maliyetlerini büyük ölçüde düşürmektedir.</p>
+                    
+                    <h2 class="mb-3">GoItaly ile Yurt Dışı Eğitim Sürecinizi Kolaylaştırın</h2>
+                    <p>Yurt dışında eğitim almak, hem heyecan verici hem de karmaşık bir süreç olabilir. Neyse ki, <strong>GoItaly</strong> olarak bu süreci sizin için kolaylaştırıyoruz. Eğitim danışmanlığı hizmetlerimizle, doğru üniversite seçimi, burs başvuruları ve kayıt işlemleri gibi her adımda yanınızdayız.</p>
+                    <p>GoItaly’nin sunduğu hizmetler:</p>
+                    <ul>
+                        <li>Üniversite kayıt danışmanlığı</li>
+                        <li>Burs başvurusu desteği</li>
+                        <li>Dil okulu rehberliği</li>
+                        <li>İtalya’da öğrenci olmanın püf noktaları</li>
+                    </ul>
+                    <p>Eğer siz de yurt dışında eğitim almayı düşünüyorsanız, GoItaly’nin deneyimli ekibiyle hemen iletişime geçin ve bu heyecan verici yolculuğa ilk adımı atın!</p>
                 </div>
                 <!-- Blog Detail End -->
 
+
                 <!-- Comment List Start -->
-                <div class="mb-5">
+                <!-- <div class="mb-5">
                     <h2 class="mb-4">3 Comments</h2>
                     <div class="d-flex mb-4">
                         <img src="img/user.jpg" class="img-fluid rounded-circle" style="width: 45px; height: 45px;">
@@ -163,11 +172,11 @@
                             <button class="btn btn-sm btn-light">Reply</button>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <!-- Comment List End -->
 
                 <!-- Comment Form Start -->
-                <div class="bg-secondary p-5">
+                <!-- <div class="bg-secondary p-5">
                     <h2 class="mb-4">Leave a comment</h2>
                     <form>
                         <div class="row g-3">
@@ -188,53 +197,53 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
                 <!-- Comment Form End -->
             </div>
 
             <!-- Sidebar Start -->
             <div class="col-lg-4">
                 <!-- Search Form Start -->
-                <div class="mb-5">
+                <!-- <div class="mb-5">
                     <div class="input-group">
                         <input type="text" class="form-control p-3" placeholder="Keyword">
                         <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
                     </div>
-                </div>
+                </div> -->
                 <!-- Search Form End -->
 
                 <!-- Category Start -->
                 <div class="mb-5">
-                    <h2 class="mb-4">Categories</h2>
+                    <h2 class="mb-4">Kategoriler</h2>
                     <div class="d-flex flex-column justify-content-start bg-secondary p-4">
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Design</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Development</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Web Development</a>
-                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Keyword Research</a>
-                        <a class="h5" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Email Marketing</a>
+                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Eğitim</a>
+                        <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Danışmanlık</a>
+                        <a class="h5" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Gezi</a>
+                        <!-- <a class="h5 mb-3" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Keyword Research</a>
+                        <a class="h5" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Email Marketing</a> -->
                     </div>
                 </div>
                 <!-- Category End -->
 
                 <!-- Recent Post Start -->
                 <div class="mb-5">
-                    <h2 class="mb-4">Recent Post</h2>
+                    <h2 class="mb-4">Son Yazılarımız</h2>
                     <div class="d-flex mb-3">
                         <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                        <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
+                        <a href="detail.html" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Yurt Dışında Eğitim Almanın Avantajları ve Dezavantajları
                         </a>
                     </div>
                     <div class="d-flex mb-3">
-                        <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                        <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
+                        <img class="img-fluid" src="img/blog-2.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                        <a href="detail-2.html" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">İtalya’nın Eğitim Altyapısı ve Fırsatları
                         </a>
                     </div>
                     <div class="d-flex mb-3">
-                        <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
-                        <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
+                        <img class="img-fluid" src="img/blog-3.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+                        <a href="detail-3.html" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">İtalya'da Gezilecek Yerler ve Kültürel Etkinlikler
                         </a>
                     </div>
-                    <div class="d-flex mb-3">
+                    <!-- <div class="d-flex mb-3">
                         <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
                         <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
                         </a>
@@ -243,42 +252,42 @@
                         <img class="img-fluid" src="img/blog-1.jpg" style="width: 100px; height: 100px; object-fit: cover;" alt="">
                         <a href="" class="h5 d-flex align-items-center bg-secondary px-3 mb-0">Lorem ipsum dolor sit amet adipis elit
                         </a>
-                    </div>
+                    </div> -->
                 </div>
                 <!-- Recent Post End -->
 
                 <!-- Image Start -->
-                <div class="mb-5">
+                <!-- <div class="mb-5">
                     <img src="img/blog-1.jpg" alt="" class="img-fluid">
-                </div>
+                </div> -->
                 <!-- Image End -->
 
                 <!-- Tags Start -->
-                <div class="mb-5">
-                    <h2 class="mb-4">Tag Cloud</h2>
+                 <div class="mb-5">
+                    <h2 class="mb-4">İlgili tagler</h2>
                     <div class="d-flex flex-wrap m-n1">
-                        <a href="" class="btn btn-secondary m-1">Design</a>
-                        <a href="" class="btn btn-secondary m-1">Development</a>
-                        <a href="" class="btn btn-secondary m-1">Marketing</a>
-                        <a href="" class="btn btn-secondary m-1">SEO</a>
-                        <a href="" class="btn btn-secondary m-1">Writing</a>
-                        <a href="" class="btn btn-secondary m-1">Consulting</a>
-                        <a href="" class="btn btn-secondary m-1">Design</a>
-                        <a href="" class="btn btn-secondary m-1">Development</a>
-                        <a href="" class="btn btn-secondary m-1">Marketing</a>
-                        <a href="" class="btn btn-secondary m-1">SEO</a>
-                        <a href="" class="btn btn-secondary m-1">Writing</a>
-                        <a href="" class="btn btn-secondary m-1">Consulting</a>
+                        <a href="" class="btn btn-secondary m-1">İtalya Eğitim</a>
+                        <a href="" class="btn btn-secondary m-1">Yurtdışı Eğitim</a>
+                        <a href="" class="btn btn-secondary m-1">Burs Programı</a>
+                        <a href="" class="btn btn-secondary m-1">Üniversite Kayıt</a>
+                        <a href="" class="btn btn-secondary m-1">Dil Okulu</a>
+                        <a href="" class="btn btn-secondary m-1">Eğitim Danışmanlığı</a>
+                        <a href="" class="btn btn-secondary m-1">İtalya Üniversite</a>
+                        <a href="" class="btn btn-secondary m-1">Burslu Eğitim</a>
+                        <a href="" class="btn btn-secondary m-1">İtalya Master</a>
+                        <a href="" class="btn btn-secondary m-1">Yurtdışı Okul</a>
+                        <a href="" class="btn btn-secondary m-1">Eğitim Rehberi</a>
+                        <a href="" class="btn btn-secondary m-1">Öğrenci Hayatı</a>
                     </div>
                 </div>
                 <!-- Tags End -->
 
                 <!-- Plain Text Start -->
                 <div>
-                    <h2 class="mb-4">Plain Text</h2>
+                    <h2 class="mb-4">Açıklama</h2>
                     <div class="bg-secondary text-center" style="padding: 30px;">
-                        <p>Vero sea et accusam justo dolor accusam lorem consetetur, dolores sit amet sit dolor clita kasd justo, diam accusam no sea ut tempor magna takimata, amet sit et diam dolor ipsum amet diam</p>
-                        <a href="" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                        <p>GoItaly, İtalya'da eğitim, danışmanlık ve gezi hizmetleri sunan bir firmadır. İtalya'da eğitim almak isteyen öğrencilere, İtalya'da yaşamak isteyenlere ve İtalya'yı gezmek isteyenlere hizmet vermektedir.</p>
+                        <!-- <a href="" class="btn btn-primary rounded-pill py-2 px-4">Read More</a> -->
                     </div>
                 </div>
                 <!-- Plain Text End -->
@@ -293,63 +302,64 @@
     <div class="container-fluid bg-primary text-secondary p-5">
         <div class="row g-5">
             <div class="col-12 text-center">
-                <h1 class="display-5 mb-4">Stay Update!!!</h1>
+                <h1 class="display-6 mb-4">GoItaly ile İtalya yolculuğunuz başlasın!</h1>
                 <form class="mx-auto" style="max-width: 600px;">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                        <button class="btn btn-dark px-4">Sign Up</button>
-                    </div>
                 </form>
             </div>
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary p-5">
         <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Quick Links</h3>
+            <!-- <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Hızlı Linkler</h3>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Anasayfa</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
+                </div>
+            </div> -->
+            <div class="col-lg-2">
+                </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Hızlı Linkler</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hakkımızda</a>
+                    <a class="text-secondary mb-2" href="service.html"><i class="bi bi-arrow-right text-primary me-2"></i>Hizmetlerimiz</a>
+                    <a class="text-secondary mb-2" href="blog.html"><i class="bi bi-arrow-right text-primary me-2"></i>Blog</a>
+                    <a class="text-secondary" href="contact.html"><i class="bi bi-arrow-right text-primary me-2"></i>İletişim</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Popular Links</h3>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                    <a class="text-secondary mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog Post</a>
-                    <a class="text-secondary" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                </div>
+                <h3 class="text-white mb-4">Bize Ulaşın</h3>
+                <!-- <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, Italya</p> -->
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i><a href="mailto:info@goitaly.com.tr" class="text-secondary">info@goitaly.com.tr</a></p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i><a href="tel:+393533797001" class="text-secondary">+(39) 353 379 7001</a></p>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Get In Touch</h3>
-                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>123 Street, New York, USA</p>
-                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>info@example.com</p>
-                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h3 class="text-white mb-4">Follow Us</h3>
+                <h3 class="text-white mb-4">Bizi Takip Edin</h3>
                 <div class="d-flex">
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a> -->
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a> -->
+                    <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a> -->
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/people/GoItaly/61567112667924/"><img src="assets/facebook.png" alt="Facebook" class="custom-icon"></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.instagram.com/goitaly41/"><img src="assets/instagram.png" alt="Instagram" class="custom-icon"></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.tiktok.com/@goitaly41"><img src="assets/tik-tok.png" alt="TikTok" class="custom-icon"></a>
                 </div>
+            </div>
+            <div class="col-lg-1">
             </div>
         </div>
     </div>
     <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
-        <p class="m-0">&copy; <a class="text-secondary border-bottom" href="#">Your Site Name</a>. All Rights Reserved. Designed by <a class="text-secondary border-bottom" href="https://htmlcodex.com">HTML Codex</a></p>
+        <p class="m-0">&copy; 2025 <a class="text-secondary border-bottom" href="index.html">GoItaly</a>. Tüm Hakları Saklıdır. GoItaly Danışmanlık Hizmetleri'nin Ticari Markasıdır.</p>
     </div>
     <!-- Footer End -->
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#header-carousel" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
