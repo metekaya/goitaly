@@ -563,47 +563,62 @@
 
     <!-- Other scripts -->
     <script>
-        const quoteForm = document.getElementById("quoteForm");
-        console.log(quoteForm);
-        if (quoteForm) {
-            quoteForm.addEventListener("submit", async function (event) {
-                event.preventDefault();
+       document.addEventListener("DOMContentLoaded", function () {
+            const quoteForm = document.getElementById("quoteForm");
+            const submitButton = quoteForm.querySelector('button[type="submit"]');
 
-                const name = document.getElementById("quote-name").value;
-                const email = document.getElementById("quote-email").value;
-                const subject = document.getElementById("quote-subject").value;
-                const message = document.getElementById("quote-message").value;
+            if (quoteForm) {
+                quoteForm.addEventListener("submit", async function (event) {
+                    event.preventDefault(); // Prevent form from refreshing the page
 
-                try {
-                    const response = await fetch("https://sender-xi.vercel.app/send-email", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json",
-                        },
-                        body: JSON.stringify({
-                            recipient: "info@goitaly.com.tr",
-                            subject: `Bilgi Talebi: ${subject}`,
-                            message: `Gönderen: ${name}\nEmail: ${email}\n\nMesajı:${message}`,
-                        }),
-                    });
+                    // Disable the submit button and show loading text
+                    submitButton.disabled = true;
+                    submitButton.textContent = "Gönderiliyor...";
 
-                    if (response.ok) {
-                        alert("Bilgi talebin başarıyla alındı!");
-                        quoteForm.reset();
-                    } else {
-                        const errorData = await response.json();
-                        alert(
-                            "Bilgi talebi gönderilemedi: " +
-                            (errorData.error || "Unknown error")
-                        );
+                    // Collect form data
+                    const name = document.getElementById("quote-name").value;
+                    const email = document.getElementById("quote-email").value;
+                    const subject = document.getElementById("quote-subject").value;
+                    const message = document.getElementById("quote-message").value;
+
+                    try {
+                        // Send POST request to the email server
+                        const response = await fetch("https://sender-xi.vercel.app/send-email", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({
+                                recipient: "info@goitaly.com.tr",
+                                subject: `Bilgi Talebi: ${subject}`,
+                                message: `Gönderen: ${name}\nEmail: ${email}\n\nMesajı:${message}`,
+                            }),
+                        });
+
+                        // Handle response
+                        if (response.ok) {
+                            alert("Bilgi talebin başarıyla alındı!");
+                            quoteForm.reset(); // Reset the form
+                        } else {
+                            const errorData = await response.json();
+                            alert(
+                                "Bilgi talebi gönderilemedi: " +
+                                (errorData.error || "Unknown error")
+                            );
+                        }
+                    } catch (error) {
+                        alert("Something went wrong: " + error.message);
+                    } finally {
+                        // Re-enable the submit button and restore the original text
+                        submitButton.disabled = false;
+                        submitButton.textContent = "Gönder";
                     }
-                } catch (error) {
-                    alert("Something went wrong: " + error.message);
-                }
-            });
-        } else {
-            console.error("Quote form not found in the DOM.");
-        }
+                });
+            } else {
+                console.error("Quote form not found in the DOM.");
+            }
+        });
+
     </script>
 </body>
 
