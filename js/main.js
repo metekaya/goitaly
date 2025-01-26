@@ -74,13 +74,11 @@ document
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Referer: "https://www.goitaly.com.tr",
-          Origin: "https://www.goitaly.com.tr",
         },
         body: JSON.stringify({
-          recipient: "metekaya55@gmail.com", // TODO: info@goitaly.com.tr
-          subject: subject,
-          message: `Name: ${name}\n\nMessage:\n${message}\n\nEmail: ${email}`,
+          recipient: "info@goitaly.com.tr",
+          subject: `Bilgi Talebi: ${subject}`,
+          message: `Gönderen: ${name}\nEmail: ${email}\n\nMesajı:${message}`,
         }),
       });
 
@@ -88,6 +86,46 @@ document
       if (response.ok) {
         alert("Bilgi talebin başarıyla alındı!");
         document.getElementById("contactForm").reset(); // Reset the form
+      } else {
+        const errorData = await response.json();
+        alert(
+          "Bilgi talebi gönderilemedi: " + (errorData.error || "Unknown error")
+        );
+      }
+    } catch (error) {
+      alert("Something went wrong: " + error.message);
+    }
+  });
+
+document
+  .getElementById("quoteForm")
+  .addEventListener("submit", async function (event) {
+    event.preventDefault(); // Prevent form from refreshing the page
+
+    // Collect form data
+    const name = document.getElementById("quote-name").value;
+    const email = document.getElementById("quote-email").value;
+    const subject = document.getElementById("quote-subject").value;
+    const message = document.getElementById("quote-message").value;
+
+    try {
+      // Send POST request to the email server
+      const response = await fetch("https://sender-xi.vercel.app/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          recipient: "info@goitaly.com.tr",
+          subject: `Bilgi Talebi: ${subject}`,
+          message: `Gönderen: ${name}\nEmail: ${email}\n\nMesajı:${message}`,
+        }),
+      });
+
+      // Handle response
+      if (response.ok) {
+        alert("Bilgi talebin başarıyla alındı!");
+        document.getElementById("quoteForm").reset(); // Reset the form
       } else {
         const errorData = await response.json();
         alert(
