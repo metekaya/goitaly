@@ -74,11 +74,9 @@ document
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Referer: "https://www.goitaly.com.tr",
-          Origin: "https://www.goitaly.com.tr",
         },
         body: JSON.stringify({
-          recipient: "metekaya55@gmail.com", // TODO: info@goitaly.com.tr
+          recipient: "metekaya55@gmail.com", // TODO: Replace with info@goitaly.com.tr
           subject: subject,
           message: `Name: ${name}\n\nMessage:\n${message}\n\nEmail: ${email}`,
         }),
