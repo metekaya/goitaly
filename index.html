@@ -325,44 +325,42 @@
 
 
     <!-- Quote Start -->
-          <!-- TODO: Resim değişecek form submission eklenecek -->
-
     <div class="container-fluid bg-secondary px-0">
         <div class="row g-0">
             <div class="col-lg-6 py-6 px-5">
                 <h1 class="display-5 mb-4">Bilgi almak için hemen ulaşın</h1>
                 <p class="mb-4">GoItaly ile hayalinizdeki eğitimi planlamak artık çok kolay! Kişiye özel okul, vize ve burs haritalarımızla, İtalya'da eğitim yolculuğunuzun her adımını sizin için planlıyoruz. Ücretsiz danışmanlık fırsatından yararlanarak size en uygun çözümleri sunabiliriz. Hemen iletişime geçin, hayallerinize birlikte ulaşalım!</p>
-                <form>
+                <form id="quoteForm">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-1" placeholder="John Doe">
-                                <label for="form-floating-1">İsim Soyisim</label>
+                                <input type="text" class="form-control" id="quote-name" placeholder="John Doe">
+                                <label for="quote-name">İsim Soyisim</label>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-floating">
-                                <input type="email" class="form-control" id="form-floating-2" placeholder="name@example.com">
-                                <label for="form-floating-2">E-posta Adresi</label>
+                                <input type="email" class="form-control" id="quote-email" placeholder="name@example.com">
+                                <label for="quote-email">E-posta Adresi</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <input type="text" class="form-control" id="form-floating-3" placeholder="Subject">
-                                <label for="form-floating-3">Konu</label>
+                                <input type="text" class="form-control" id="quote-subject" placeholder="Subject">
+                                <label for="quote-subject">Konu</label>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="form-floating">
-                                <textarea class="form-control" placeholder="Message" id="form-floating-4" style="height: 150px"></textarea>
-                                <label for="form-floating-4">Mesajın</label>
-                              </div>
+                                <textarea class="form-control" placeholder="Message" id="quote-message" style="height: 150px"></textarea>
+                                <label for="quote-message">Mesajın</label>
+                            </div>
                         </div>
                         <div class="col-12">
                             <button class="btn btn-primary w-100 py-3" type="submit">Gönder</button>
                         </div>
                     </div>
-                </form>
+                </form>                
             </div>
             <div class="col-lg-6" style="min-height: 400px;">
                 <div class="position-relative h-100">
