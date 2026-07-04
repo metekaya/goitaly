@@ -1,6 +1,11 @@
 (function ($) {
   "use strict";
 
+  // Keep footer copyright year current
+  document.querySelectorAll(".current-year").forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
   // Sticky Navbar
   $(window).scroll(function () {
     if ($(this).scrollTop() > 40) {
@@ -41,6 +46,34 @@
     $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     return false;
   });
+
+  // Instagram Reels coverflow carousel
+  var reelsCarousel = document.getElementById("reelsCarousel");
+  if (reelsCarousel) {
+    var reelCards = Array.prototype.slice.call(reelsCarousel.querySelectorAll(".reel-card"));
+    var nextRole = { left: "right", center: "left", right: "center" };
+    var prevRole = { right: "left", left: "center", center: "right" };
+
+    function rotate(map) {
+      reelCards.forEach(function (card) {
+        card.setAttribute("data-role", map[card.getAttribute("data-role")]);
+      });
+    }
+
+    var nextBtn = reelsCarousel.querySelector(".reel-next");
+    var prevBtn = reelsCarousel.querySelector(".reel-prev");
+    if (nextBtn) nextBtn.addEventListener("click", function () { rotate(nextRole); });
+    if (prevBtn) prevBtn.addEventListener("click", function () { rotate(prevRole); });
+
+    reelCards.forEach(function (card) {
+      card.addEventListener("click", function (e) {
+        if (card.getAttribute("data-role") !== "center") {
+          e.preventDefault();
+          rotate(card.getAttribute("data-role") === "right" ? nextRole : prevRole);
+        }
+      });
+    });
+  }
 
   // Testimonials carousel
   $(".testimonial-carousel").owlCarousel({
